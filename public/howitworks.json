@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Step 1: Create Your Account",
+    "desc": "Sign up easily using your email or social accounts to get instant access to our dashboard.",
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "title": "Step 2: Add Parcel Details",
+    "desc": "Fill up pickup & delivery addresses, package details, and special instructions in a few clicks.",
+    "icon": "📦"
+  },
+  {
+    "id": 3,
+    "title": "Step 3: Schedule Pickup",
+    "desc": "Choose a convenient pickup time and our delivery partner will collect your parcel right on time.",
+    "icon": "🚚"
+  },
+  {
+    "id": 4,
+    "title": "Step 4: Track in Real-Time",
+    "desc": "Monitor your parcel movement from pickup to doorstep with live tracking and instant notifications.",
+    "icon": "📍"
+  },
+  {
+    "id": 5,
+    "title": "Step 5: Get Delivered Safely",
+    "desc": "We ensure fast, secure and reliable delivery at your customer’s doorstep maintaining maximum safety.",
+    "icon": "✅"
+  }
+]

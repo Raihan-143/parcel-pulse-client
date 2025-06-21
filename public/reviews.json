@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "review": "ParcelPulse made my business deliveries faster and safer. Highly recommended!",
+    "name": "Rahim Uddin",
+    "position": "Business Owner",
+    "cover": "/assets/customers/customer1.jpg"
+  },
+  {
+    "id": 2,
+    "review": "Excellent customer support and timely delivery. Really satisfied!",
+    "name": "Sharmin Akter",
+    "position": "E-Commerce Seller",
+    "cover": "/assets/customers/customer2.jpg"
+  },
+  {
+    "id": 3,
+    "review": "My customers always get their packages on time. Great service!",
+    "name": "Sajjad Hossain",
+    "position": "Online Seller",
+    "cover": "/assets/customers/customer3.jpg"
+  },
+  {
+    "id": 4,
+    "review": "Affordable pricing with professional service. Will continue using ParcelPulse!",
+    "name": "Nusrat Jahan",
+    "position": "Boutique Owner",
+    "cover": "/assets/customers/customer4.jpg"
+  },
+  {
+    "id": 5,
+    "review": "ParcelPulse has transformed my shipping experience. Love their service!",
+    "name": "Imran Chowdhury",
+    "position": "Freelancer",
+    "cover": "/assets/customers/customer5.jpg"
+  },
+  {
+    "id": 6,
+    "review": "Smooth pickup and delivery process, no hassle. Perfect for my business.",
+    "name": "Ayesha Rahman",
+    "position": "Small Business Owner",
+    "cover": "/assets/customers/customer6.jpg"
+  },
+  {
+    "id": 7,
+    "review": "Always on time and very helpful delivery team. Highly trustable!",
+    "name": "Nazmul Hasan",
+    "position": "Wholesaler",
+    "cover": "/assets/customers/customer7.jpg"
+  },
+  {
+    "id": 8,
+    "review": "ParcelPulse gives me peace of mind knowing my deliveries are safe.",
+    "name": "Maliha Khan",
+    "position": "Fashion Designer",
+    "cover": "/assets/customers/customer8.jpg"
+  },
+  {
+    "id": 9,
+    "review": "Best courier service I have ever used. 5-star experience every time!",
+    "name": "Tanvir Alam",
+    "position": "Retail Store Owner",
+    "cover": "/assets/customers/customer9.jpg"
+  },
+  {
+    "id": 10,
+    "review": "No hidden fees, no delays — just honest, reliable service!",
+    "name": "Farzana Haque",
+    "position": "Online Marketer",
+    "cover": "/assets/customers/customer10.jpg"
+  }
+]

@@ -22,7 +22,7 @@ const OurServices = () => {
     }, []);
 
     return (
-        <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-black transition-colors duration-500 rounded-2xl">
+        <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-black transition-colors duration-500 rounded-2xl mt-5">
             <div className="max-w-7xl mx-auto px-4 text-center">
                <OurServicesHeader></OurServicesHeader>
                 {/* <p className="text-gray-500 dark:text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">

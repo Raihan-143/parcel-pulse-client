@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "How does ParcelPulse ensure package safety?",
+    "answer": "We use advanced tracking, secure packaging, and trained delivery personnel to ensure your package reaches safely."
+  },
+  {
+    "id": 2,
+    "question": "What areas do you deliver to?",
+    "answer": "We deliver to all corners of Bangladesh including rural and remote areas ensuring maximum coverage."
+  },
+  {
+    "id": 3,
+    "question": "How fast is the delivery service?",
+    "answer": "We offer same-day, next-day, and standard delivery options depending on the location and package type."
+  },
+  {
+    "id": 4,
+    "question": "Is there real-time tracking available?",
+    "answer": "Yes, you can track your parcel in real-time through our web or mobile app with detailed status updates."
+  },
+  {
+    "id": 5,
+    "question": "How can I become a merchant partner?",
+    "answer": "Simply click on 'Become a Merchant' button, fill up your business details, and our team will assist you further."
+  },
+  {
+    "id": 6,
+    "question": "What payment options are available?",
+    "answer": "We support cash on delivery, online payment, wallet balance, and scheduled invoice payments for merchants."
+  }
+]

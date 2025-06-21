@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const BeMerchant = () => {
   return (
-    <div className="py-20 px-5 md:px-24 bg-gradient-to-br from-[#fce4ec] via-[#f3e5f5] to-[#e0f7fa] mt-5 rounded-2xl">
+    <div className="py-20 px-5  md:px-24 bg-gradient-to-br from-[#fce4ec] via-[#f3e5f5] to-[#e0f7fa] mt-5 rounded-2xl">
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         
         {/* Left Side Image */}
