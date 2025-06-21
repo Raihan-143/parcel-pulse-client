@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "icon": "FaShippingFast",
+    "title": "Fast Delivery",
+    "description": "We ensure super fast and secure parcel delivery across the country."
+  },
+  {
+    "id": 2,
+    "icon": "FaMapMarkedAlt",
+    "title": "Real-time Tracking",
+    "description": "Track your parcel's live location anytime with real-time updates."
+  },
+  {
+    "id": 3,
+    "icon": "FaWarehouse",
+    "title": "Safe Storage",
+    "description": "Safe and secure warehouse storage for your valuable parcels."
+  },
+  {
+    "id": 4,
+    "icon": "FaUserShield",
+    "title": "Secure Handling",
+    "description": "We handle every parcel with maximum security and care."
+  },
+  {
+    "id": 5,
+    "icon": "FaHeadset",
+    "title": "24/7 Support",
+    "description": "Get instant support from our dedicated support team anytime."
+  },
+  {
+    "id": 6,
+    "icon": "FaGlobe",
+    "title": "Worldwide Service",
+    "description": "Deliver parcels internationally with reliable global partners."
+  }
+]

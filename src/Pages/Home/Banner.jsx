@@ -6,7 +6,7 @@ import banner2 from '../../assets/banner/banner2.png';
 import banner3 from '../../assets/banner/banner3.png';
 const Banner = () => {
     return (
-        <Carousel autoPlay={true} infiniteLoop={true}>
+        <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
                 <div >
                     <img src={banner1} />
                     <p className="legend">Legend 1</p>

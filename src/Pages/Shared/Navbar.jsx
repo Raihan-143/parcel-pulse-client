@@ -19,8 +19,8 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className='flex items-center'>
-                    <img src="/icon.png" alt="" className='w-[40px]' />
+                <div className='flex'>
+                    <img src="/icon1.png" alt="" className='w-[48px]' />
                     <NavLink to="/" className="btn btn-ghost text-3xl font-bold">Parcel<span className='text-amber-600'>Pulse</span></NavLink>
                 </div>
                 {/* <a className="btn btn-ghost text-3xl font-bold">Parcel<span className='text-amber-600'>Pulse</span></a> */}
