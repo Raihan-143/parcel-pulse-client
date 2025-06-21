@@ -34,7 +34,7 @@ const TrustedBy = () => {
       >
         <div className="flex justify-center items-center mb-4">
           <FaHandshake size={35} className="text-green-600 dark:text-green-400 mr-3" />
-          <h2 className="text-4xl font-extrabold text-amber-500 dark:text-white">
+          <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 dark:text-white">
             Trusted By
           </h2>
         </div>

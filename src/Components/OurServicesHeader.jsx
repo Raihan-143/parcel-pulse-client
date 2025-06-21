@@ -15,10 +15,10 @@ const OurServicesHeader = () => {
 
       {/* Title with Icon */}
       <div className="flex justify-center items-center mb-6">
-        <FaCubes size={40} className="text-amber-500 dark:text-blue-400 mr-3" />
-        <h2 className="text-5xl font-extrabold text-amber-500 dark:text-white relative inline-block">
+        <FaCubes size={40} className="text-purple-500 dark:text-blue-400 mr-3" />
+        <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 dark:text-white relative inline-block">
           Our Services
-          <span className="absolute left-0 bottom-0 w-full h-2 bg-gradient-to-r from-green-400 to-amber-500 rounded-full animate-pulse"></span>
+          <span className="absolute left-0 bottom-0 w-full h-2 bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 rounded-full animate-pulse"></span>
         </h2>
       </div>
 

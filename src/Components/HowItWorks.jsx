@@ -22,7 +22,7 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-[#1f2c3f] mb-5">
+        <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 mb-5">
           How It Works
         </h1>
 
@@ -43,7 +43,7 @@ const HowItWorks = () => {
             className="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 text-center"
           >
             <div className="text-5xl mb-5">{item.icon}</div>
-            <h3 className="text-xl font-bold text-[#1f2c3f] mb-3">
+            <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 mb-3">
               {item.title}
             </h3>
             <p className="text-gray-600 leading-relaxed">{item.desc}</p>

@@ -32,7 +32,7 @@ const Review = () => {
 
             {/* Title & Subtext */}
             <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-bold text-[#1f2c3f] mb-5">
+                <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 mb-5">
                     What our customers are sayings
                 </h1>
                 <p className="text-lg text-gray-600">
@@ -65,7 +65,7 @@ const Review = () => {
                 {reviews.map((review) => (
                     <SwiperSlide key={review.id}>
                         <div className="relative bg-white p-10 rounded-3xl shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                            <div className="text-3xl text-pink-400 mb-6">
+                            <div className="text-3xl text-purple-700 mb-6">
                                 <FaQuoteLeft />
                             </div>
                             <p className="text-gray-700 text-lg mb-8 leading-relaxed">
@@ -75,7 +75,7 @@ const Review = () => {
                                 <img
                                     src={review.cover}
                                     alt={review.name}
-                                    className="w-16 h-16 rounded-full border-4 border-pink-400 object-cover shadow-lg hover:scale-110 transition-transform duration-300"
+                                    className="w-16 h-16 rounded-full border-4 border-purple-700 object-cover shadow-lg hover:scale-110 transition-transform duration-300"
                                 />
                                 <div>
                                     <h3 className="font-semibold text-[#1f2c3f] text-lg">{review.name}</h3>

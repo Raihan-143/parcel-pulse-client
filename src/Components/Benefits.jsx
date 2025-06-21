@@ -5,9 +5,9 @@ import { benefitsData } from "../data/benefits";
 
 const Benefits = () => {
   return (
-    <div className="py-20 px-5 md:px-24 bg-gradient-to-br from-green-100 via-amber-100 to-fuchsia-200 min-h-screen mt-5 rounded-2xl">
+    <div className="py-20 px-5 md:px-24 bg-gradient-to-br from-[#f3e5f5] via-[#e0f7fa] to-[#fce4ec] min-h-screen mt-5 rounded-2xl">
       <motion.h2
-        className="text-5xl font-extrabold text-center mb-20 text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-amber-500 to-fuchsia-500 drop-shadow-md"
+        className="text-5xl font-extrabold text-center mb-20 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 drop-shadow-md"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -41,7 +41,7 @@ const Benefits = () => {
             </motion.div>
 
             <div className="md:w-1/2 w-full bg-white/30 backdrop-blur-lg p-10 rounded-3xl shadow-lg border border-white/30">
-              <h3 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-amber-500 to-fuchsia-500">
+              <h3 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700">
                 {item.title}
               </h3>
               <p className="text-lg text-gray-800 leading-relaxed">

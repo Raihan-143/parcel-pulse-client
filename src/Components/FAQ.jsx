@@ -22,7 +22,7 @@ const FAQ = () => {
                     </div>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-bold text-[#1f2c3f] mb-5">
+                <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-600 to-purple-700 mb-5">
                     Frequently Asked Question (FAQ)
                 </h1>
 
