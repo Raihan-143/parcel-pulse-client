@@ -24,7 +24,7 @@ const logos = [
 
 const TrustedBy = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-black transition-colors duration-500">
+    <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-black transition-colors duration-500 rounded-2xl mt-5">
       <motion.div 
         className="max-w-7xl mx-auto px-4 text-center mb-12"
         initial={{ opacity: 0, y: -50 }}
@@ -34,7 +34,7 @@ const TrustedBy = () => {
       >
         <div className="flex justify-center items-center mb-4">
           <FaHandshake size={35} className="text-green-600 dark:text-green-400 mr-3" />
-          <h2 className="text-4xl font-extrabold text-gray-800 dark:text-white">
+          <h2 className="text-4xl font-extrabold text-amber-500 dark:text-white">
             Trusted By
           </h2>
         </div>
@@ -55,7 +55,7 @@ const TrustedBy = () => {
               <img 
                 src={logo} 
                 alt={`Company ${index+1}`} 
-                className="h-14 w-auto object-contain mx-auto drop-shadow-md"
+                className="h-6 w-auto object-contain mx-auto drop-shadow-md"
               />
             </motion.div>
           ))}
