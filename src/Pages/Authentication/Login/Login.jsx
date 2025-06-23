@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
-    const {register, handleSubmit}=useForm();
+    const {register, handleSubmit, formState: {errors}}=useForm();
 
     const onSubmit=data =>{
         console.log(data)
@@ -38,6 +38,12 @@ const Login = () => {
             placeholder="Password"
             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:outline-none"
           />
+          {
+            errors.password?.type === 'required' && <p className="text-red-600">Password is required</p>
+          }
+          {
+            errors.password?.type === 'minLength' && <p className="text-amber-500">Password must be 6 character or longer</p>
+          }
         </div>
 
         <div className="flex justify-end">
