@@ -2,8 +2,22 @@ import React from "react";
 import { FaGoogle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router";
+import { FcGoogle } from "react-icons/fc";
+import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
+  const {signInWithGoogle}=useAuth();
+    const handleWithGoogle=()=>{
+        signInWithGoogle()
+        .then(result=>{
+            console.log(result.user)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+
+    }
     const {register, handleSubmit, formState: {errors}}=useForm();
 
     const onSubmit=data =>{
@@ -16,8 +30,8 @@ const Login = () => {
       transition={{ duration: 0.6 }}
       className="w-full max-w-md bg-white rounded-2xl p-10 shadow-lg"
     >
-      <h1 className="text-3xl font-bold mb-2 text-gray-900">Welcome Back</h1>
-      <p className="mb-8 text-gray-500">Login with ParcelPulse</p>
+      <h1 className="text-3xl text-center font-bold mb-2 text-gray-900">Welcome Back</h1>
+      <p className="mb-8 text-gray-500 text-center">Login with ParcelPulse</p>
       <form onSubmit={handleSubmit (onSubmit)}>
       <div className="space-y-5">
         <div>
@@ -56,7 +70,11 @@ const Login = () => {
           className="w-full p-3 bg-amber-400 text-white font-semibold rounded-lg shadow hover:bg-amber-500 transition"
         >
           Login
+           
         </motion.button>
+        <p className="text-center text-sm text-gray-500">
+          Don’t have an account? <Link to='/register' className="text-purple-700 cursor-pointer font-semibold hover:underline">Register</Link>
+        </p>
 
         <div className="flex items-center my-4">
           <div className="border-t border-gray-300 w-full"></div>
@@ -67,14 +85,18 @@ const Login = () => {
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
-          className="w-full flex items-center justify-center p-3 border border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-200 transition"
-        >
-          <FaGoogle className="mr-3 text-red-500" /> Login with Google
+          className="w-full flex items-center justify-center gap-2 p-3 border border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-200 transition"
+          >
+            <button onClick={handleWithGoogle}
+          
+          >
+        
+
+          <FcGoogle size={24} /> Login with Google
+          </button>
         </motion.button>
 
-        <p className="text-center text-sm text-gray-500">
-          Don’t have an account? <span className="text-amber-500 hover:underline cursor-pointer">Register</span>
-        </p>
+       
       </div>
       </form>
     </motion.div>

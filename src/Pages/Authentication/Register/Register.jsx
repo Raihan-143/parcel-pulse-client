@@ -3,8 +3,20 @@ import { motion } from "framer-motion";
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../hooks/useAuth";
+import { Link } from "react-router";
 
 const Register = () => {
+    const {signInWithGoogle}=useAuth();
+    const handleWithGoogle=()=>{
+        signInWithGoogle()
+        .then(result=>{
+            console.log(result.user)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+
+    }
     const [showForm, setShowForm] = useState(false);
 
     useEffect(() => {
@@ -25,7 +37,7 @@ const Register = () => {
     };
 
     return (
-        <div className=" flex items-center justify-center px-4">
+        <div className=" flex items-center w-full max-w-md justify-center px-4">
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -125,18 +137,17 @@ const Register = () => {
                         </motion.div>
 
                         <div className="mt-5 text-center text-sm text-gray-600">
-                            Already have an account? <span className="text-purple-700 cursor-pointer font-semibold hover:underline">Login</span>
-                        </div>
-
+                            Already have an account?<Link to='/login' className="text-purple-700 cursor-pointer font-semibold hover:underline">Login</Link>
+                            </div>
                         <div className="flex items-center my-4">
                             <div className="flex-grow h-px bg-gray-300"></div>
                             <span className="px-3 text-gray-400">Or</span>
                             <div className="flex-grow h-px bg-gray-300"></div>
                         </div>
 
-                        <button
+                        <button onClick={handleWithGoogle}
                             type="button"
-                            className="flex items-center justify-center gap-2 border border-gray-300 py-3 w-full rounded-xl hover:bg-gray-100 transition duration-300 shadow"
+                            className="flex items-center justify-center gap-2 border border-gray-300 py-3 w-full rounded-xl hover:bg-gray-100 transition duration-300 shadow cursor-pointer"
                         >
                             <FcGoogle size={24} /> Register with Google
                         </button>
