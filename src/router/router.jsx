@@ -7,6 +7,9 @@ import Register from "../Pages/Authentication/Register/Register";
 import Coverage from "../Components/Coverage";
 import PrivateRoutes from "../routes/PrivateRoutes";
 import SendParcel from "../Pages/SendParcel";
+import PaymentPage from "../Pages/PaymentPage";
+import DashboardLayout from "../Layouts/DashboardLayout";
+import UserHomePage from "../Pages/UserHomePage";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +27,10 @@ export const router = createBrowserRouter([
     {
       path:'/send-parcel',
       element:<PrivateRoutes><SendParcel></SendParcel></PrivateRoutes>
+    },
+    {
+      path:'payment/:id',
+      element:<PrivateRoutes><PaymentPage></PaymentPage></PrivateRoutes>
     }
    ]
   },
@@ -40,6 +47,24 @@ export const router = createBrowserRouter([
         Component: Register,
       }
     ]
-  }
+  },
+  {
+  path: '/dashboard',
+  element: <PrivateRoutes><DashboardLayout /></PrivateRoutes>,
+  children: [
+    {
+      index: true, 
+      element: <UserHomePage />,
+    },
+    {
+      path: 'user-home', 
+      element: <UserHomePage />,
+    },
+    // {
+    //   path: 'tracking',
+    //   element: <TrackingPage />,
+    // },
+  ],
+}
 ]);
 

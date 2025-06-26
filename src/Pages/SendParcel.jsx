@@ -4,11 +4,15 @@ import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import useAuth from "../hooks/useAuth";
+import useAxiosSecure from "../hooks/useAxiosSecure";
+import { useNavigate } from "react-router";
 
 const MySwal = withReactContent(Swal);
 
 const SendParcel = () => {
     const { user } = useAuth();
+    const axiosSecure = useAxiosSecure();
+    const navigate = useNavigate();
     const { register, handleSubmit, reset, watch, setValue, formState: { errors } } = useForm();
 
     const [districtData, setDistrictData] = useState([]);
@@ -126,6 +130,16 @@ const SendParcel = () => {
                 };
 
                 console.log("📦 Parcel Saved:", finalData);
+
+                axiosSecure.post('/parcels', finalData)
+                    .then(res => {
+                        console.log(res.data)
+                        if (res.data.insertedId) {
+                            console.log("Redirecting to:", `/payment/${res.data.insertedId}`);
+                            navigate(`/payment/${res.data.insertedId}`);
+                        }
+
+                    })
 
                 MySwal.fire({
                     icon: "success",
