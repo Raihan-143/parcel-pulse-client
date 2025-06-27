@@ -10,6 +10,7 @@ import SendParcel from "../Pages/SendParcel";
 import PaymentPage from "../Pages/PaymentPage";
 import DashboardLayout from "../Layouts/DashboardLayout";
 import UserHomePage from "../Pages/UserHomePage";
+import TrackingPage from "../Pages/TrackingPage";
 
 export const router = createBrowserRouter([
   {
@@ -60,10 +61,10 @@ export const router = createBrowserRouter([
       path: 'user-home', 
       element: <UserHomePage />,
     },
-    // {
-    //   path: 'tracking',
-    //   element: <TrackingPage />,
-    // },
+    {
+      path: 'tracking',
+      element:<TrackingPage></TrackingPage>
+    },
   ],
 }
 ]);
