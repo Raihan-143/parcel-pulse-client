@@ -11,6 +11,9 @@ import PaymentPage from "../Pages/PaymentPage";
 import DashboardLayout from "../Layouts/DashboardLayout";
 import UserHomePage from "../Pages/UserHomePage";
 import TrackingPage from "../Pages/TrackingPage";
+import MyParcels from "../Pages/Dashboard/MyParcels";
+import ParcelDetails from "../Pages/Dashboard/ParcelDetails";
+import EditParcelPage from "../Pages/Dashboard/EditParcelPage";
 
 export const router = createBrowserRouter([
   {
@@ -60,6 +63,22 @@ export const router = createBrowserRouter([
     {
       path: 'user-home', 
       element: <UserHomePage />,
+    },
+    {
+      path:'my-parcels',
+      element:<MyParcels></MyParcels>,
+    },
+    {
+      path: 'parcel/:id',
+      element:<ParcelDetails></ParcelDetails>,
+    },
+    {
+      path: 'edit-parcel/:id',
+      element:<PrivateRoutes><EditParcelPage></EditParcelPage></PrivateRoutes>,
+    },
+    {
+      path: 'track/:id',
+      element:<TrackingPage></TrackingPage>,
     },
     {
       path: 'tracking',
